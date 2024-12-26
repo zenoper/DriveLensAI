@@ -1,0 +1,10 @@
+[2024-12-26 16:16:28] INFO: DataStorage instance initialized
+[2024-12-26 16:16:28] INFO: Key 'type' added with value 'sportscar'
+[2024-12-26 16:16:28] INFO: Key 'brand' added with value 'BMW'
+[2024-12-26 16:16:28] INFO: Retrieved value for key: 'type'
+[2024-12-26 16:16:28] INFO: Retrieved value for key: 'brand'
+[2024-12-26 16:16:28] WARNING: Attempted to access non-existent key: 'nonexistent'
+[2024-12-26 16:16:28] INFO: Listed all data. Current size: 2 items
+[2024-12-26 16:16:28] INFO: Deleted key: 'type'
+[2024-12-26 16:16:28] WARNING: Attempted to delete non-existent key: 'nonexistent'
+[2024-12-26 16:16:28] INFO: Listed all data. Current size: 1 items
