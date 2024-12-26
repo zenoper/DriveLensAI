@@ -24,13 +24,6 @@ def project_polygon(polygon: List[Tuple[float, float]], axis: Tuple[float, float
 def check_polygon_collision(polygon1: List[Tuple[float, float]], polygon2: List[Tuple[float, float]]) -> bool:
     """
     Check if two polygons are colliding using the Separating Axis Theorem.
-    
-    Args:
-        polygon1: List of (x, y) tuples representing vertices of first polygon
-        polygon2: List of (x, y) tuples representing vertices of second polygon
-        
-    Returns:
-        bool: True if polygons are colliding, False otherwise
     """
     # Get all edges from both polygons
     edges1 = get_edges(polygon1)
@@ -56,11 +49,11 @@ def check_polygon_collision(polygon1: List[Tuple[float, float]], polygon2: List[
 
 # Example usage:
 if __name__ == "__main__":
-    # Test case 1: Overlapping polygons
+    # True
     polygon1 = [(0, 0), (4, 0), (4, 4), (0, 4)]
     polygon2 = [(2, 2), (6, 2), (6, 6), (2, 6)]
-    print(check_polygon_collision(polygon1, polygon2))  # Should print: True
+    print(check_polygon_collision(polygon1, polygon2))
     
-    # Test case 2: Non-overlapping polygons
+    # False
     polygon3 = [(5, 5), (7, 5), (7, 7), (5, 7)]
-    print(check_polygon_collision(polygon1, polygon3))  # Should print: False
+    print(check_polygon_collision(polygon1, polygon3))
